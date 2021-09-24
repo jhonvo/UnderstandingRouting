@@ -16,8 +16,7 @@ def sayMsj(msj):
 
 @app.route ('/repeat/<num>/<msj>', methods=['GET'])
 def multiplyMsj(num,msj): 
-    return msj * int(num)
-
+    return f"<h1>{msj * int(num)}</h1>"
 
 if __name__ == "__main__":
     app.run( debug = True ) #This needs to do at te end of the app so it takes all the commands included above during the debug 
